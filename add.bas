@@ -1,7 +1,8 @@
 #include once "datax.bi"
 const table1="datax.dat"
 dim recordsuse as records
-
+color 15,5
+cls
 recordsuse.deletes=falses
 recordsuse.ref=0
 recordsuse.dates="21-07-30"
