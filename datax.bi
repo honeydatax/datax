@@ -42,6 +42,7 @@ public function adds(files as string,recordss as records)as integer
 end function
 
 public function report(files as string, refss as integer,freport as string)as double
+	dim counter as integer
 	dim f as integer
 	dim ff as integer
 	dim fff as integer
@@ -64,9 +65,11 @@ public function report(files as string, refss as integer,freport as string)as do
 			print #ff,"|"+space(32-fff)+trim(recordsuse.refs);
 			print #ff,using "|############.00";recordsuse.value;
 			sums=sums+recordsuse.value
-			print #ff,using "|############.00";sums
+			print #ff,using "|############.00";sums;
+			print #ff," | #";counter
 		end if
 		eofs=eof(f)
+		counter=counter+1
 	wend
 	close f
 	close ff
