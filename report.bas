@@ -2,7 +2,8 @@
 const table1="datax.dat"
 const report1="report.txt"
 dim recordsuse as records
-
+color 15,5
+cls
 recordsuse.deletes=falses
 recordsuse.ref=0
 recordsuse.dates="21-07-30"
